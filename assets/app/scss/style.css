@@ -1,4 +1,5 @@
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -402,4 +403,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/*=============== GOOGLE FONTS ===============*/
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Font Size ==========*/
+/*========== Font Weight ==========*/
 /*# sourceMappingURL=style.css.map */
