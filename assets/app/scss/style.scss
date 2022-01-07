@@ -3,6 +3,10 @@
 @import 'base/normalize';
 //Config
 @import 'config/variables';
+//Layout
+@import 'layout/layout';
+//Utilities
+@import 'utilities/utilities';
 //Components
 @import 'components/about';
 @import 'components/breakpoints';

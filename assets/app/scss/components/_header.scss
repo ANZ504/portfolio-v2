@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  width: 90vw;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+
+  &__logo img{
+    width: 230px;
+    height: 71px;
+    object-fit: cover;
+  }
+  &__nav .nav {
+    &__list {
+      display: flex;
+      width: 450px;
+      height: 41px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__items{
+      display: flex;
+      width: auto;
+      height: 41px;
+      padding: 5px 13px;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border-radius: 8px;
+      transition: $transtion-1;
+      
+      &:hover {
+        background-color: $seccondary-color-2;
+      }
+    }
+    &__item {
+      font-size: $font-lg;
+      font-family: $font-family;
+      font-weight: $font-bold;
+      color: $neutral-color-1;
+      text-transform: lowercase;
+      transition: $transtion-1;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+  }
+}

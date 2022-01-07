@@ -24,6 +24,7 @@ dd {
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul,
 ol {
+  padding: 0;
   list-style: none;
 }
 
@@ -89,6 +90,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  font-size: 62.5%;
 }
 
 /* Sections
@@ -405,9 +407,126 @@ template {
 }
 
 /*=============== GOOGLE FONTS ===============*/
-/*=============== VARIABLES CSS ===============*/
+/*=============== VARIABLES ===============*/
 /*========== Colors ==========*/
 /*========== Font and typography ==========*/
 /*========== Font Size ==========*/
 /*========== Font Weight ==========*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-primary {
+  display: -ms-grid;
+  display: grid;
+  width: 200px;
+  height: 60px;
+  place-items: center;
+  border-radius: 15px;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #f9f9f9;
+  background-color: #47a8ea;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button-seccondary {
+  display: -ms-grid;
+  display: grid;
+  width: 200px;
+  height: 60px;
+  place-items: center;
+  border-radius: 15px;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #47a8ea;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  height: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.header__logo img {
+  width: 230px;
+  height: 71px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  height: 41px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav .nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 41px;
+  padding: 5px 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.header__nav .nav__items:hover {
+  background-color: #c3e3f8;
+}
+
+.header__nav .nav__item {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #999999;
+  text-transform: lowercase;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.header__nav .nav__item:hover {
+  color: #47a8ea;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.button-primary {
+  display: grid;
+  width: 200px;
+  height: 60px;
+  place-items: center;
+  border-radius: 15px;
+  font-size: $font-lg;
+  font-family: $font-family;
+  font-weight: $font-bold;
+  color: $neutral-color-3;
+  background-color: $primary-color;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.button-seccondary {
+    display: grid;
+    width: 200px;
+    height: 60px;
+    place-items: center;
+    border-radius: 15px;
+    font-size: 2.4rem;
+    font-family: $font-family;
+    font-weight: $font-bold;
+    color: $primary-color;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+  
