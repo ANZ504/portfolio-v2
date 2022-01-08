@@ -427,18 +427,47 @@ body {
 .button-primary {
   display: -ms-grid;
   display: grid;
+  position: relative;
   width: 200px;
   height: 60px;
   place-items: center;
+  z-index: 1;
   border-radius: 15px;
   font-size: 2.4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #f9f9f9;
   background-color: #47a8ea;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.button-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background-color: white;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
+}
+
+.button-primary:hover {
+  color: #47a8ea;
+}
+
+.button-primary:hover::before {
+  width: 100%;
 }
 
 .button-seccondary {
@@ -581,7 +610,7 @@ body {
   border-radius: 30px;
 }
 
-.slider img:before {
+.slider img::before {
   position: absolute;
   content: "";
   width: 20px;
@@ -592,7 +621,7 @@ body {
   transition: 0.4s;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
   content: "";
   height: 28px;
@@ -606,6 +635,7 @@ body {
 
 input:checked + .slider {
   background-color: #0a3b5c;
+  border: 2px solid #0a3b5c;
 }
 
 input:checked + .slider:before {

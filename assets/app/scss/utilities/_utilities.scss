@@ -1,17 +1,45 @@
 .button-primary {
   display: grid;
+  position: relative;
   width: 200px;
   height: 60px;
   place-items: center;
+  z-index: 1;
   border-radius: 15px;
   font-size: $font-lg;
   font-family: $font-family;
   font-weight: $font-bold;
   color: $neutral-color-3;
   background-color: $primary-color;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background-color: white;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    -webkit-transition: all 250ms;
+
+  }
+  &:hover {
+    color: $primary-color;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+
 }
 .button-seccondary {
     display: grid;

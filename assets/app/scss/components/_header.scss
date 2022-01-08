@@ -83,29 +83,31 @@
   transition: 0.4s;
   border: 2px solid $primary-color;
   border-radius: 30px;
-}
-.slider img:before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  z-index: 10;
-  transition: 0.4s;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 28px;
-  width: 28px;
-  border-radius: 20px;
-  left: 4px;
-  background-color: $primary-color;
-  transition: 0.4s;
+
+  & img::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 10;
+    transition: 0.4s;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 20px;
+    left: 4px;
+    background-color: $primary-color;
+    transition: 0.4s;
+  }
 }
 
 input:checked + .slider {
   background-color: #0a3b5c;
+  border: 2px solid $seccondary-color;
 }
 
 input:checked + .slider:before {
